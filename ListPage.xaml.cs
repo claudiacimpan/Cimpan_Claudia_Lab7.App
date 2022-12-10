@@ -18,8 +18,8 @@ public partial class ListPage : ContentPage
     }
     async void OnDeleteButtonClicked(object sender, EventArgs e)
     {
-        var slist = (ShopList)BindingContext;
-        await App.Database.DeleteShopListAsync(slist);
+        var product = (Product)BindingContext;
+        await App.Database.DeleteProductAsync(product);
         await Navigation.PopAsync();
     }
     async void OnChooseButtonClicked(object sender, EventArgs e)
@@ -31,6 +31,7 @@ public partial class ListPage : ContentPage
         });
 
     }
+
     protected override async void OnAppearing()
     {
         base.OnAppearing();

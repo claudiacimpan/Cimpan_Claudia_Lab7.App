@@ -1,4 +1,5 @@
 using Cimpan_Claudia_Lab7.Models;
+using System.Runtime.CompilerServices;
 
 namespace Cimpan_Claudia_Lab7;
 
