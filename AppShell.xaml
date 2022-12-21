@@ -12,7 +12,7 @@
  ContentTemplate="{DataTemplate local:MainPage}"
  />
         <ShellContent
- Title="About"
+ Title="My shopping Lists"
  ContentTemplate="{DataTemplate local:ListEntryPage}"
  />
             <ShellContent
@@ -23,6 +23,7 @@
  Title="About"
  ContentTemplate="{DataTemplate local:AboutPage}"
  />
+
     </TabBar>
 
 </Shell>

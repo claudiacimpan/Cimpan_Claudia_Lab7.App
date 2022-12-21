@@ -28,10 +28,10 @@ public partial class ShopPage : ContentPage
         
         var location = locations?.FirstOrDefault();
         // var myLocation = await Geolocation.GetLocationAsync();
-        var myLocation = new Location(46.7731796289, 23.6213886738);
+        var myLocation = new Location(46.7592925, 23.5572935);
         var distance = myLocation.CalculateDistance(location,
  DistanceUnits.Kilometers);
-        if (distance < 4)
+        if (distance < 10)
         {
             var request = new NotificationRequest
             {
